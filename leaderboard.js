@@ -53,5 +53,6 @@ if (Meteor.isServer) {
       for (var i = 0; i < names.length; i++)
         Players.insert({name: names[i], score: Math.floor(Math.random()*10)*5});
     }
+    Meteor._sleepForMs(10000);
   });
 }
